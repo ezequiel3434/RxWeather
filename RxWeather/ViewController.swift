@@ -44,11 +44,18 @@ class ViewController: UIViewController {
         print(cityEncoded)
         
         let resource = Resource<WeatherResult>(url: url)
+//        let search = URLRequest.load(resource: resource)
+//            .observe(on: MainScheduler.instance)
+////            .catchErrorJustReturn(WeatherResult.empty)
+//            .asDriver(onErrorJustReturn: WeatherResult.empty)
+//
+        
         let search = URLRequest.load(resource: resource)
             .observe(on: MainScheduler.instance)
-//            .catchErrorJustReturn(WeatherResult.empty)
-            .asDriver(onErrorJustReturn: WeatherResult.empty)
-        
+            .catch { (error) in
+                print(error.localizedDescription)
+                return Observable.just(WeatherResult.empty)
+            }.asDriver(onErrorJustReturn: WeatherResult.empty)
         
 //            .subscribe(onNext: { result in
 //                let weather = result.main
