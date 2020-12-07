@@ -15,6 +15,7 @@
 		37D1141F257D9FBA0039F77F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D1141D257D9FBA0039F77F /* LaunchScreen.storyboard */; };
 		37D11429257DAB640039F77F /* WeatherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D11428257DAB640039F77F /* WeatherResult.swift */; };
 		37D11433257DADFB0039F77F /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D11432257DADFB0039F77F /* URLRequest+Extensions.swift */; };
+		37D11437257DC5AD0039F77F /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D11436257DC5AD0039F77F /* URL+Extensions.swift */; };
 		DCDEAA962530C11E29847A3B /* Pods_RxWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313D1ADFA06DAB537D886599 /* Pods_RxWeather.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		37D11420257D9FBA0039F77F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37D11428257DAB640039F77F /* WeatherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResult.swift; sourceTree = "<group>"; };
 		37D11432257DADFB0039F77F /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		37D11436257DC5AD0039F77F /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		C0F56544784FED1AC8B91C04 /* Pods-RxWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWeather.debug.xcconfig"; path = "Target Support Files/Pods-RxWeather/Pods-RxWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		E267A0CD2552309E0DD0B79E /* Pods-RxWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWeather.release.xcconfig"; path = "Target Support Files/Pods-RxWeather/Pods-RxWeather.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				37D11432257DADFB0039F77F /* URLRequest+Extensions.swift */,
+				37D11436257DC5AD0039F77F /* URL+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37D11417257D9FB80039F77F /* ViewController.swift in Sources */,
+				37D11437257DC5AD0039F77F /* URL+Extensions.swift in Sources */,
 				37D11429257DAB640039F77F /* WeatherResult.swift in Sources */,
 				37D11413257D9FB80039F77F /* AppDelegate.swift in Sources */,
 				37D11433257DADFB0039F77F /* URLRequest+Extensions.swift in Sources */,
