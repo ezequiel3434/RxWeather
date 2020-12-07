@@ -13,6 +13,7 @@
 		37D1141A257D9FB80039F77F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D11418257D9FB80039F77F /* Main.storyboard */; };
 		37D1141C257D9FBA0039F77F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D1141B257D9FBA0039F77F /* Assets.xcassets */; };
 		37D1141F257D9FBA0039F77F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D1141D257D9FBA0039F77F /* LaunchScreen.storyboard */; };
+		37D11429257DAB640039F77F /* WeatherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D11428257DAB640039F77F /* WeatherResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		37D1141B257D9FBA0039F77F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37D1141E257D9FBA0039F77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37D11420257D9FBA0039F77F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37D11428257DAB640039F77F /* WeatherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		37D11411257D9FB80039F77F /* RxWeather */ = {
 			isa = PBXGroup;
 			children = (
+				37D11427257DAB4B0039F77F /* Models */,
 				37D11412257D9FB80039F77F /* AppDelegate.swift */,
 				37D11414257D9FB80039F77F /* SceneDelegate.swift */,
 				37D11416257D9FB80039F77F /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				37D11420257D9FBA0039F77F /* Info.plist */,
 			);
 			path = RxWeather;
+			sourceTree = "<group>";
+		};
+		37D11427257DAB4B0039F77F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				37D11428257DAB640039F77F /* WeatherResult.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37D11417257D9FB80039F77F /* ViewController.swift in Sources */,
+				37D11429257DAB640039F77F /* WeatherResult.swift in Sources */,
 				37D11413257D9FB80039F77F /* AppDelegate.swift in Sources */,
 				37D11415257D9FB80039F77F /* SceneDelegate.swift in Sources */,
 			);
