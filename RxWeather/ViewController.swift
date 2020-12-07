@@ -46,17 +46,22 @@ class ViewController: UIViewController {
         let resource = Resource<WeatherResult>(url: url)
         let search = URLRequest.load(resource: resource)
             .observe(on: MainScheduler.instance)
-            .catchErrorJustReturn(WeatherResult.empty)
+//            .catchErrorJustReturn(WeatherResult.empty)
+            .asDriver(onErrorJustReturn: WeatherResult.empty)
+        
+        
 //            .subscribe(onNext: { result in
 //                let weather = result.main
 //                self.displayWeather(weather)
 //            }).disposed(by: disposeBag)
         search.map({ "\($0.main.temp) ℃" })
-            .bind(to: self.temperatureLabel.rx.text)
+//            .bind(to: self.temperatureLabel.rx.text)
+            .drive(self.temperatureLabel.rx.text)
             .disposed(by: disposeBag)
         
         search.map({ "\($0.main.humidity) 💦" })
-            .bind(to: self.humidityLabel.rx.text)
+//            .bind(to: self.humidityLabel.rx.text) sin drive
+            .drive(self.humidityLabel.rx.text)
             .disposed(by: disposeBag)
         
         
